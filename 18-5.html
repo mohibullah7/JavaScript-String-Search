@@ -11,15 +11,39 @@
 <h1>lets try interpolation of html element change DOM with it </h1>
 <p>this is where we can implement it html tags through interpolation</p>
 <p id="show"></p>
-
+<p id="new"></p>
 
 <script>
-  let header = "template strings"
-  let tags = ['javascript', 'ES6 ', "cosing"]
-  
+  // let header = "template strings";
+  // let tags = ['javascript', 'ES6 ', 'hello'];
+  // let html = `<h1>${header}</h1><ul>`;
+  //   for (const x of tags ){
+  //     html += `<li>${x}</li>`
+  //   }
+  //   html += `</ul>`;
+  //   document.getElementById('show').innerHTML=html;
+
+  let h2= 'this is template interpolation';
+  let html5 = [500,600,900,700,300,200];
+  for (let value of html5){
+    html5 +=`<h2>${h2}</h2><ul>`
+      html5 +=`<li>${value}</li>`
+
+  }
+  html5 += `</ul>`;
+  document.getElementById('show').innerHTML=html5
+
+  let h3 = "this is h3 can print direclty";
+  let arr=["mohib","khan",'mahsud','semeter','8th']
+  let html6 =`<h3>${h3}</h3><ul>`;
+    for(let y of arr){
+      html6 +=`<li>${y}</li>` ;
+    }
+    html6 += `</ul>`;
+    document.getElementById('new').innerHTML=html6;
 
 
 </script>
-  <script src="/stringMethods.js"></script>
+  <!-- <script src="/stringMethods.js"></script> -->
 </body>
 </html>
