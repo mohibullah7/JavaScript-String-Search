@@ -16,4 +16,18 @@ let mchVal=mch.match(/is/)
 document.getElementById("demo").innerHTML=mch.length,"",mchVal;
 console.log(mchVal);
 
+let bnb ='start it with new query start '
+console.log(bnb.startsWith('start'));
 
+let endw="this sentence is end here ended";
+console.log(endw.endsWith("end"));
+
+//this velue return false becaus eits not ended with end value string
+
+let incl="this is used to leanr include method in strings"
+console.log(incl.includes("used"));
+//it return true value 
+
+let inclu="this is used to leanr include method in strings"
+console.log(inclu.includes("no"));
+//it return false value because no is not incluse in string value
