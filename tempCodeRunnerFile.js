@@ -1,3 +1,3 @@
-let g = 0.2;
-let h = 0.1;
-console.log(g+h);
+
+let a = BigInt(2839289382938928392);
+console.log(typeof(a));
